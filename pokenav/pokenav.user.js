@@ -2,7 +2,7 @@
 // @id quickCopyPortalnameplus
 // @name IITC Plugin: Quick Copy PokeNav POI Command 
 // @category Tweaks
-// @version 0.0.2
+// @version 0.0.3
 //
 // @namespace
 // @description Copies the command to add a Gym to PokeNav with one click
