@@ -3,9 +3,13 @@
 // @name IITC Plugin: Quick Copy PokeNav POI Command 
 // @category Tweaks
 // @version 0.0.2
+//
 // @namespace
 // @description Copies the command to add a Gym to PokeNav with one click
 // @author Forte
+// @namespace      https://pkmngots.com
+// @updateURL      https://github.com/pkmngots/iitc-plugins/raw/master/pokenav/pokenav.user.js
+// @downloadURL    https://github.com/pkmngots/iitc-plugins/raw/master/pokenav/pokenav.user.js
 // @include        https://*.ingress.com/intel*
 // @include        http://*.ingress.com/intel*
 // @match          https://*.ingress.com/intel*
