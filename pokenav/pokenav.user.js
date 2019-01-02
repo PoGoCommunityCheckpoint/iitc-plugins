@@ -1,5 +1,5 @@
 // ==UserScript==
-// @id quickCopyPortalnameplus
+// @id quickCopyPokeNav
 // @name IITC Plugin: Quick Copy PokeNav POI Command 
 // @category Tweaks
 // @version 0.0.3
