@@ -8,8 +8,8 @@
 // @description Copies the command to add a Gym to PokeNav with one click
 // @author Forte
 // @namespace      https://pkmngots.com
-// @updateURL      https://github.com/pkmngots/iitc-plugins/raw/master/pokenav/pokenav.user.js
-// @downloadURL    https://github.com/pkmngots/iitc-plugins/raw/master/pokenav/pokenav.user.js
+// @updateURL      https://github.com/pkmngots/iitc-plugins/raw/master/pokenav/quickcopypokenavpoicommand.user.js
+// @downloadURL    https://github.com/pkmngots/iitc-plugins/raw/master/pokenav/quickcopypokenavpoicommand.user.js
 // @include        https://*.ingress.com/intel*
 // @include        http://*.ingress.com/intel*
 // @match          https://*.ingress.com/intel*
