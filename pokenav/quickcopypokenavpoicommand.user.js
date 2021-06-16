@@ -2,7 +2,7 @@
 // @id quickCopyPokeNav
 // @name IITC Plugin: Quick Copy PokeNav POI Command 
 // @category Tweaks
-// @version 0.0.4
+// @version 0.0.5
 //
 // @namespace
 // @description Copies the command to add a Gym to PokeNav with one click
@@ -60,7 +60,7 @@ function wrapper(plugin_info) {
       var p_lng = portalData.lngE6 / 1E6;
   
   
-      var PortalAssistBottext ='$create poi gym "' + p_name + '" ' + p_lat + ' ' + p_lng;
+      var PortalAssistBottext ='$create poi gym ' + JSON.stringify(p_name) + ' ' + p_lat + ' ' + p_lng;
   
       $('body').append('<textarea class="portal-name-textarea">' + PortalAssistBottext + '</textarea>');
       $('.portal-name-textarea').select();
@@ -76,7 +76,7 @@ function wrapper(plugin_info) {
       var p_lng = portalData.lngE6 / 1E6;
   
   
-      var PortalAssistBottext ='$create poi pokestop "' + p_name + '" ' + p_lat + ' ' + p_lng;
+      var PortalAssistBottext ='$create poi pokestop ' + JSON.stringify(p_name) + ' ' + p_lat + ' ' + p_lng;
   
       $('body').append('<textarea class="portal-name-textarea">' + PortalAssistBottext + '</textarea>');
       $('.portal-name-textarea').select();
