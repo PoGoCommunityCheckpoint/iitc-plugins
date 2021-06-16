@@ -58,7 +58,7 @@ function wrapper(plugin_info) {
       var p_name = portalData.title;
       var p_latE6 = portalData.latE6;
       var p_lngE6 = portalData.lngE6;
-      var p_lat =portalData.latE6 / 1E6;
+      var p_lat = portalData.latE6 / 1E6;
       var p_lng = portalData.lngE6 / 1E6;
   
   
@@ -66,7 +66,7 @@ function wrapper(plugin_info) {
       var convenientIntelURL= 'https://www.ingress.com/intel?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
   
   
-      var PortalAssistBottext ='$create poi gym "' + p_name + '" ' + p_lat + ' ' + p_lng + '';
+      var PortalAssistBottext ='$create poi gym "' + p_name + '" ' + p_lat + ' ' + p_lng;
   
       //$('body').append('<textarea class="portal-name-textarea">' + p_name + '&#10;' + convenientGoogleMapsURL + '&#10;' + convenientIntelURL + '&#10;' + PortalAssistBot + '</textarea>');
       //$('body').append('<textarea class="portal-name-textarea">' + PortalAssistBot + '&#10;' + p_name + '&#10;' + convenientGoogleMapsURL + '&#10;' + convenientIntelURL + '</textarea>');
@@ -83,7 +83,7 @@ function wrapper(plugin_info) {
       var p_name = portalData.title;
       var p_latE6 = portalData.latE6;
       var p_lngE6 = portalData.lngE6;
-      var p_lat =portalData.latE6 / 1E6;
+      var p_lat = portalData.latE6 / 1E6;
       var p_lng = portalData.lngE6 / 1E6;
   
   
@@ -91,9 +91,9 @@ function wrapper(plugin_info) {
       var convenientIntelURL= 'INTEL: https://www.ingress.com/intel?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
       var applemapsurl = 'APPLE: https://maps.apple.com/?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
   
-      var PortalAssistBottext ='$create poi gym "' + p_name + '" ' + p_lat + ' ' + p_lng + '';
+      var PortalAssistBottext ='$create poi pokestop "' + p_name + '" ' + p_lat + ' ' + p_lng;
   
-      $('body').append('<textarea class="portal-name-textarea">' + '$create poi pokestop "' + p_name + '" ' + p_lat + ' ' + p_lng + '</textarea>');
+      $('body').append('<textarea class="portal-name-textarea">' + PortalAssistBottext + '</textarea>');
       $('.portal-name-textarea').select();
       document.execCommand('copy');
       $('.portal-summary-textarea').remove();
