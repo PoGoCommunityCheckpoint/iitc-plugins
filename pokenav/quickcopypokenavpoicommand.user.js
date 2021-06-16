@@ -29,7 +29,7 @@ function wrapper(plugin_info) {
     plugin_info.buildName = 'CopytoClipboard';
   
     // Datetime-derived version of the plugin
-    plugin_info.dateTimeVersion = '20190101000000';
+    plugin_info.dateTimeVersion = '20210616232300';
   
     // ID/name of the plugin
     plugin_info.pluginId = 'pokenavpoimanagement';
@@ -56,20 +56,11 @@ function wrapper(plugin_info) {
     window.plugin.CopytoClipboard.copyPortalAssistBot = function() {
       var portalData = window.portals[window.selectedPortal].options.data;
       var p_name = portalData.title;
-      var p_latE6 = portalData.latE6;
-      var p_lngE6 = portalData.lngE6;
       var p_lat = portalData.latE6 / 1E6;
       var p_lng = portalData.lngE6 / 1E6;
   
   
-      var convenientGoogleMapsURL = 'http://maps.google.com/?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
-      var convenientIntelURL= 'https://www.ingress.com/intel?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
-  
-  
       var PortalAssistBottext ='$create poi gym "' + p_name + '" ' + p_lat + ' ' + p_lng;
-  
-      //$('body').append('<textarea class="portal-name-textarea">' + p_name + '&#10;' + convenientGoogleMapsURL + '&#10;' + convenientIntelURL + '&#10;' + PortalAssistBot + '</textarea>');
-      //$('body').append('<textarea class="portal-name-textarea">' + PortalAssistBot + '&#10;' + p_name + '&#10;' + convenientGoogleMapsURL + '&#10;' + convenientIntelURL + '</textarea>');
   
       $('body').append('<textarea class="portal-name-textarea">' + PortalAssistBottext + '</textarea>');
       $('.portal-name-textarea').select();
@@ -81,15 +72,9 @@ function wrapper(plugin_info) {
       window.plugin.CopytoClipboard.copyAllData = function() {
       var portalData = window.portals[window.selectedPortal].options.data;
       var p_name = portalData.title;
-      var p_latE6 = portalData.latE6;
-      var p_lngE6 = portalData.lngE6;
       var p_lat = portalData.latE6 / 1E6;
       var p_lng = portalData.lngE6 / 1E6;
   
-  
-      var convenientGoogleMapsURL = 'GMAPS: http://maps.google.com/?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
-      var convenientIntelURL= 'INTEL: https://www.ingress.com/intel?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
-      var applemapsurl = 'APPLE: https://maps.apple.com/?ll=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6 + '&q=' + p_latE6 / 1E6 + ',' + p_lngE6 / 1E6;
   
       var PortalAssistBottext ='$create poi pokestop "' + p_name + '" ' + p_lat + ' ' + p_lng;
   
